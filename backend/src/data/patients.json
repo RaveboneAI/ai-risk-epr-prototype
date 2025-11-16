@@ -1,0 +1,797 @@
+[
+  {
+    "id": "p001",
+    "name": "George Smith",
+    "age": 65,
+    "sex": "M",
+    "bmi": 28.5,
+    "pmh": ["Hypertension", "CKD stage 2"],
+    "medications": ["Ramipril", "Furosemide"],
+    "allergies": ["Penicillin - anaphylaxis", "Latex - rash"],
+    "alerts": ["Falls Risk", "VTE prophylaxis required", "Sepsis 6 pathway initiated"],
+    "presentingComplaint": "Fever and confusion",
+    "mobility": "reduced",
+    "cognitive": "impaired",
+    "nutrition": "adequate",
+    "continence": "continent",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": true,
+    "labs": {
+      "baselineCreatinine": 90,
+      "currentCreatinine": 150,
+      "baselineEgfr": 80,
+      "currentEgfr": 60,
+      "wbc": 15,
+      "crp": 210,
+      "potassium": 5.2,
+      "sodium": 138,
+      "hb": 110,
+      "urea": 12.5
+    },
+    "vitals": {
+      "news2": 7,
+      "hr": 110,
+      "rr": 24,
+      "systolicBp": 95,
+      "diastolicBp": 60,
+      "temp": 38.7,
+      "spo2": 93,
+      "supplementalO2": true,
+      "avpu": "V"
+    },
+    "imaging": [
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-15T08:30:00",
+        "findings": "Right lower lobe consolidation consistent with pneumonia. No pleural effusion. Heart size normal.",
+        "reporter": "Dr. A. Radiologist"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "MUST Score",
+        "date": "2024-11-15T09:00:00",
+        "score": 1,
+        "assessor": "Staff Nurse J. Smith",
+        "notes": "BMI 28.5, no recent weight loss, acute disease present"
+      },
+      {
+        "type": "Confusion Assessment (4AT)",
+        "date": "2024-11-15T09:15:00",
+        "score": 6,
+        "assessor": "Staff Nurse J. Smith",
+        "notes": "Disoriented to time and place, inattention present"
+      },
+      {
+        "type": "Sepsis Screening",
+        "date": "2024-11-15T08:45:00",
+        "result": "Red Flag Sepsis",
+        "assessor": "Dr. M. Jones",
+        "notes": "NEWS2 7, suspected infection source: pneumonia"
+      }
+    ],
+    "examFindings": ["Right lower lobe consolidation on CXR", "Confusion", "Tachycardia"]
+  },
+  {
+    "id": "p002",
+    "name": "Mary Jones",
+    "age": 72,
+    "sex": "F",
+    "bmi": 32.1,
+    "pmh": ["Atrial fibrillation", "Type 2 diabetes", "Heart failure"],
+    "medications": ["Apixaban", "Metformin", "Bisoprolol", "Furosemide", "Ramipril"],
+    "allergies": ["Aspirin - bronchospasm"],
+    "alerts": ["Anticoagulated - bleeding risk", "Diabetic", "Heart failure - fluid balance"],
+    "presentingComplaint": "Shortness of breath and ankle swelling",
+    "mobility": "uses aid",
+    "cognitive": "normal",
+    "nutrition": "adequate",
+    "continence": "continent",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 80,
+      "currentCreatinine": 95,
+      "baselineEgfr": 70,
+      "currentEgfr": 68,
+      "wbc": 9,
+      "crp": 60,
+      "potassium": 4.9,
+      "sodium": 140,
+      "hb": 125,
+      "ntProBNP": 2400,
+      "inr": 2.3
+    },
+    "vitals": {
+      "news2": 3,
+      "hr": 98,
+      "rr": 22,
+      "systolicBp": 120,
+      "diastolicBp": 70,
+      "temp": 37.6,
+      "spo2": 95,
+      "supplementalO2": false,
+      "avpu": "Alert"
+    },
+    "imaging": [
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-15T10:20:00",
+        "findings": "Cardiomegaly with bilateral pleural effusions. Pulmonary venous congestion. No focal consolidation.",
+        "reporter": "Dr. S. Williams"
+      },
+      {
+        "type": "Echocardiogram",
+        "date": "2024-10-28T14:00:00",
+        "findings": "Moderate LV impairment (LVEF 35%). Mild mitral regurgitation. LA dilatation.",
+        "reporter": "Dr. K. Cardiologist"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "HAS-BLED Score",
+        "date": "2024-11-15T11:00:00",
+        "score": 3,
+        "assessor": "Pharmacist T. Brown",
+        "notes": "Age 72, renal disease, hypertension - moderate bleeding risk"
+      },
+      {
+        "type": "Fluid Balance Chart",
+        "date": "2024-11-15T06:00:00",
+        "result": "+1.2L positive",
+        "assessor": "Staff Nurse P. Davies",
+        "notes": "Requires strict input/output monitoring"
+      }
+    ],
+    "examFindings": ["peripheral edema", "bibasal crackles", "raised JVP"]
+  },
+  {
+    "id": "p003",
+    "name": "Margaret Chen",
+    "age": 68,
+    "sex": "F",
+    "bmi": 24.2,
+    "pmh": ["Hypertension", "Hyperlipidemia", "previous DVT"],
+    "medications": ["Amlodipine", "Atorvastatin", "Rivaroxaban"],
+    "allergies": ["Codeine - nausea and vomiting"],
+    "alerts": ["VTE history - anticoagulated", "Chest pain", "PE suspected"],
+    "presentingComplaint": "Sudden onset breathlessness and right-sided chest pain",
+    "mobility": "normal",
+    "cognitive": "normal",
+    "nutrition": "good",
+    "continence": "continent",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 75,
+      "currentCreatinine": 78,
+      "baselineEgfr": 85,
+      "currentEgfr": 83,
+      "wbc": 10,
+      "crp": 35,
+      "potassium": 4.2,
+      "sodium": 142,
+      "hb": 135,
+      "dDimer": 1850,
+      "troponin": 12
+    },
+    "vitals": {
+      "news2": 5,
+      "hr": 105,
+      "rr": 26,
+      "systolicBp": 130,
+      "diastolicBp": 80,
+      "temp": 37.8,
+      "spo2": 92,
+      "supplementalO2": true,
+      "avpu": "Alert"
+    },
+    "imaging": [
+      {
+        "type": "CT Pulmonary Angiogram (CTPA)",
+        "date": "2024-11-15T12:45:00",
+        "findings": "Large filling defect in right lower lobe pulmonary artery extending into segmental branches. Consistent with acute pulmonary embolism. No right heart strain.",
+        "reporter": "Dr. R. Radiologist"
+      },
+      {
+        "type": "Doppler Ultrasound - Lower Limbs",
+        "date": "2024-11-15T11:30:00",
+        "findings": "Deep vein thrombosis in right popliteal vein. No evidence of superficial thrombophlebitis.",
+        "reporter": "Sonographer M. Lee"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "Wells Score for PE",
+        "date": "2024-11-15T09:30:00",
+        "score": 6.5,
+        "assessor": "Dr. H. Thompson",
+        "notes": "Previous DVT (+1.5), HR>100 (+1.5), Immobilization (+1.5), Clinical signs of DVT (+3), PE most likely diagnosis (-2) = 6.5 (PE likely)"
+      },
+      {
+        "type": "VTE Risk Assessment",
+        "date": "2024-11-15T09:00:00",
+        "result": "High risk",
+        "assessor": "Staff Nurse K. Wilson",
+        "notes": "Active VTE, requires therapeutic anticoagulation"
+      }
+    ],
+    "examFindings": ["leg swelling right calf", "tachycardia", "tachypnoea", "pleuritic chest pain"]
+  },
+  {
+    "id": "p004",
+    "name": "David Chen",
+    "age": 58,
+    "sex": "M",
+    "bmi": 31.4,
+    "pmh": ["Hypertension", "Type 2 diabetes", "Smoking history"],
+    "medications": ["Ramipril", "Metformin", "Aspirin", "Atorvastatin"],
+    "allergies": ["No known drug allergies"],
+    "alerts": ["Acute MI - CCU care", "Diabetic", "PCI planned"],
+    "presentingComplaint": "Central crushing chest pain radiating to left arm for 2 hours",
+    "mobility": "bedrest",
+    "cognitive": "normal",
+    "nutrition": "adequate",
+    "continence": "continent",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 85,
+      "currentCreatinine": 88,
+      "baselineEgfr": 88,
+      "currentEgfr": 86,
+      "wbc": 11,
+      "crp": 15,
+      "potassium": 4.5,
+      "sodium": 141,
+      "hb": 145,
+      "troponin": 3500,
+      "glucose": 12.5
+    },
+    "vitals": {
+      "news2": 2,
+      "hr": 95,
+      "rr": 18,
+      "systolicBp": 145,
+      "diastolicBp": 90,
+      "temp": 37.2,
+      "spo2": 97,
+      "supplementalO2": false,
+      "avpu": "Alert"
+    },
+    "imaging": [
+      {
+        "type": "ECG",
+        "date": "2024-11-15T14:05:00",
+        "findings": "ST elevation 3mm in leads II, III, aVF. Reciprocal ST depression in V1-V3. Consistent with acute inferior STEMI.",
+        "reporter": "Dr. L. Cardiologist"
+      },
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-15T14:15:00",
+        "findings": "Normal heart size. Clear lung fields. No pulmonary edema.",
+        "reporter": "Dr. A. Radiologist"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "GRACE Score",
+        "date": "2024-11-15T14:20:00",
+        "score": 145,
+        "assessor": "Dr. L. Cardiologist",
+        "notes": "High risk ACS - urgent PCI indicated"
+      },
+      {
+        "type": "Cardiac Catheterization",
+        "date": "2024-11-15T15:30:00",
+        "result": "100% occlusion RCA, stented",
+        "assessor": "Dr. L. Cardiologist",
+        "notes": "Successful PCI to RCA with drug-eluting stent"
+      }
+    ],
+    "examFindings": ["sweating", "pale", "st elevation on ECG", "chest pain 8/10"]
+  },
+  {
+    "id": "p005",
+    "name": "Sarah Williams",
+    "age": 28,
+    "sex": "F",
+    "bmi": 22.5,
+    "pmh": ["Type 1 diabetes"],
+    "medications": ["Insulin (Novorapid)", "Insulin (Lantus)"],
+    "allergies": ["Sulfa drugs - rash"],
+    "alerts": ["DKA - ICU care", "Insulin pump removed", "Hourly BMs"],
+    "presentingComplaint": "Nausea, vomiting and abdominal pain for 24 hours",
+    "mobility": "bedrest",
+    "cognitive": "normal",
+    "nutrition": "nil by mouth",
+    "continence": "catheterized",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": true,
+    "labs": {
+      "baselineCreatinine": 70,
+      "currentCreatinine": 95,
+      "baselineEgfr": 95,
+      "currentEgfr": 75,
+      "wbc": 13,
+      "crp": 8,
+      "potassium": 5.5,
+      "sodium": 136,
+      "hb": 140,
+      "glucose": 24.5,
+      "ketones": 5.2,
+      "ph": 7.15,
+      "bicarbonate": 12,
+      "lactate": 2.8
+    },
+    "vitals": {
+      "news2": 6,
+      "hr": 115,
+      "rr": 28,
+      "systolicBp": 105,
+      "diastolicBp": 65,
+      "temp": 37.5,
+      "spo2": 98,
+      "supplementalO2": false,
+      "avpu": "Alert"
+    },
+    "imaging": [
+      {
+        "type": "Abdominal X-ray",
+        "date": "2024-11-15T16:00:00",
+        "findings": "No evidence of bowel obstruction or perforation. Moderate fecal loading.",
+        "reporter": "Dr. S. Williams"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "DKA Protocol",
+        "date": "2024-11-15T16:15:00",
+        "result": "Severe DKA",
+        "assessor": "Dr. P. Endocrinologist",
+        "notes": "pH 7.15, ketones 5.2, glucose 24.5 - Fixed rate insulin infusion commenced"
+      },
+      {
+        "type": "Fluid Balance",
+        "date": "2024-11-15T17:00:00",
+        "result": "-2.5L deficit",
+        "assessor": "ICU Nurse R. Martinez",
+        "notes": "Aggressive IV fluid resuscitation ongoing"
+      }
+    ],
+    "examFindings": ["dehydrated", "ketotic breath", "abdominal tenderness", "tachypnoea"]
+  },
+  {
+    "id": "p006",
+    "name": "Robert Taylor",
+    "age": 45,
+    "sex": "M",
+    "bmi": 26.8,
+    "pmh": ["Asthma"],
+    "medications": ["Salbutamol inhaler", "Beclometasone inhaler", "Enoxaparin 40mg"],
+    "allergies": ["Morphine - severe itching"],
+    "alerts": ["Post-op day 10 - appendicectomy", "VTE prophylaxis", "PE suspected"],
+    "presentingComplaint": "Sudden onset breathlessness and right-sided chest pain, post-operative day 10",
+    "mobility": "reduced",
+    "cognitive": "normal",
+    "nutrition": "good",
+    "continence": "continent",
+    "skinCondition": "healing wound",
+    "weightLoss": "none",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 78,
+      "currentCreatinine": 80,
+      "baselineEgfr": 95,
+      "currentEgfr": 93,
+      "wbc": 9,
+      "crp": 45,
+      "potassium": 4.1,
+      "sodium": 139,
+      "hb": 128,
+      "dDimer": 2100
+    },
+    "vitals": {
+      "news2": 5,
+      "hr": 110,
+      "rr": 24,
+      "systolicBp": 125,
+      "diastolicBp": 75,
+      "temp": 37.3,
+      "spo2": 91,
+      "supplementalO2": true,
+      "avpu": "Alert"
+    },
+    "imaging": [
+      {
+        "type": "CT Pulmonary Angiogram (CTPA)",
+        "date": "2024-11-15T18:00:00",
+        "findings": "Small subsegmental filling defects in right lower lobe. No right heart strain. Small pleural effusion right base.",
+        "reporter": "Dr. R. Radiologist"
+      },
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-15T17:30:00",
+        "findings": "Small right basal opacity, likely atelectasis vs small effusion. No consolidation.",
+        "reporter": "Dr. A. Radiologist"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "Wells Score for PE",
+        "date": "2024-11-15T17:15:00",
+        "score": 7.5,
+        "assessor": "Dr. H. Thompson",
+        "notes": "Recent surgery (+1.5), HR>100 (+1.5), Clinical signs DVT (+3), PE most likely (+3) = 9 (PE likely)"
+      },
+      {
+        "type": "VTE Risk Assessment",
+        "date": "2024-11-05T09:00:00",
+        "result": "High risk post-op",
+        "assessor": "Surgical Team",
+        "notes": "Prophylactic enoxaparin commenced"
+      }
+    ],
+    "examFindings": ["recent surgery", "leg swelling", "tachycardia", "hypoxia"]
+  },
+  {
+    "id": "p007",
+    "name": "Elizabeth Brown",
+    "age": 79,
+    "sex": "F",
+    "bmi": 19.5,
+    "pmh": ["Dementia", "Hypertension", "previous fall", "Osteoporosis"],
+    "medications": ["Donepezil", "Amlodipine", "Calcium and Vitamin D", "Alendronate"],
+    "allergies": ["Sulfa drugs - Stevens-Johnson syndrome"],
+    "alerts": ["High falls risk - 1:1 supervision", "Safeguarding concerns", "DNACPR in place", "Pressure ulcer risk"],
+    "presentingComplaint": "Sudden onset left-sided facial droop and left arm weakness 90 minutes ago",
+    "mobility": "uses aid",
+    "cognitive": "impaired",
+    "nutrition": "poor",
+    "continence": "incontinent",
+    "skinCondition": "fragile",
+    "weightLoss": "5-10%",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 95,
+      "currentCreatinine": 98,
+      "baselineEgfr": 58,
+      "currentEgfr": 55,
+      "wbc": 8,
+      "crp": 12,
+      "potassium": 4.0,
+      "sodium": 132,
+      "hb": 115,
+      "glucose": 6.2,
+      "inr": 1.1
+    },
+    "vitals": {
+      "news2": 2,
+      "hr": 78,
+      "rr": 16,
+      "systolicBp": 168,
+      "diastolicBp": 92,
+      "temp": 37.0,
+      "spo2": 96,
+      "supplementalO2": false,
+      "avpu": "V"
+    },
+    "imaging": [
+      {
+        "type": "CT Head (Non-contrast)",
+        "date": "2024-11-15T19:15:00",
+        "findings": "No acute intracranial hemorrhage. Small area of low attenuation in right MCA territory consistent with acute infarct. Moderate cerebral atrophy. Old lacunar infarcts.",
+        "reporter": "Dr. N. Neuroradiologist"
+      },
+      {
+        "type": "CT Angiogram Head & Neck",
+        "date": "2024-11-15T19:30:00",
+        "findings": "Right MCA M2 occlusion. Moderate atherosclerotic disease bilateral carotids.",
+        "reporter": "Dr. N. Neuroradiologist"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "NIHSS (Stroke Scale)",
+        "date": "2024-11-15T18:45:00",
+        "score": 8,
+        "assessor": "Dr. S. Stroke Physician",
+        "notes": "Left facial droop, left arm drift, mild dysarthria"
+      },
+      {
+        "type": "MUST Score",
+        "date": "2024-11-15T20:00:00",
+        "score": 3,
+        "assessor": "Dietitian L. Green",
+        "notes": "BMI 19.5 (+1), 8% weight loss (+1), acute stroke (+1) = High risk"
+      },
+      {
+        "type": "Waterlow Score",
+        "date": "2024-11-15T20:15:00",
+        "score": 18,
+        "assessor": "Staff Nurse K. Wilson",
+        "notes": "High pressure ulcer risk - 2-hourly turning required"
+      },
+      {
+        "type": "STRATIFY Falls Assessment",
+        "date": "2024-11-15T20:30:00",
+        "score": 4,
+        "assessor": "Physiotherapist M. Roberts",
+        "notes": "High falls risk: previous fall, impaired mobility, confusion, age - 1:1 supervision"
+      }
+    ],
+    "examFindings": ["facial droop", "arm weakness left", "speech difficulty", "FAST positive"]
+  },
+  {
+    "id": "p008",
+    "name": "James Anderson",
+    "age": 82,
+    "sex": "M",
+    "bmi": 21.2,
+    "pmh": ["COPD", "Hypertension", "previous fall", "BPH"],
+    "medications": ["Tiotropium", "Salbutamol", "Amlodipine", "Tamsulosin", "Prednisolone"],
+    "allergies": ["Contrast media - anaphylaxis", "Eggs - anaphylaxis"],
+    "alerts": ["Severe pneumonia - ICU referral", "NIV candidate", "COPD exacerbation", "Steroid cover"],
+    "presentingComplaint": "Productive cough, breathlessness, fever for 3 days",
+    "mobility": "reduced",
+    "cognitive": "normal",
+    "nutrition": "adequate",
+    "continence": "continent",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 110,
+      "currentCreatinine": 125,
+      "baselineEgfr": 52,
+      "currentEgfr": 45,
+      "wbc": 16,
+      "crp": 185,
+      "potassium": 4.7,
+      "sodium": 135,
+      "hb": 130,
+      "urea": 15.2,
+      "procalcitonin": 2.5
+    },
+    "vitals": {
+      "news2": 8,
+      "hr": 108,
+      "rr": 28,
+      "systolicBp": 92,
+      "diastolicBp": 58,
+      "temp": 38.9,
+      "spo2": 88,
+      "supplementalO2": true,
+      "avpu": "Confusion"
+    },
+    "imaging": [
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-15T21:00:00",
+        "findings": "Extensive right lower and mid zone consolidation with air bronchograms. Small right pleural effusion. Hyperinflated lungs consistent with COPD.",
+        "reporter": "Dr. S. Williams"
+      },
+      {
+        "type": "Arterial Blood Gas",
+        "date": "2024-11-15T21:15:00",
+        "findings": "Type 1 respiratory failure: pH 7.38, pO2 7.8 kPa (on 40% O2), pCO2 4.8 kPa, HCO3 24, Lactate 2.1",
+        "reporter": "Dr. H. Thompson"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "CURB-65 Score",
+        "date": "2024-11-15T21:00:00",
+        "score": 4,
+        "assessor": "Dr. H. Thompson",
+        "notes": "Confusion (+1), Urea >7 (+1), RR≥30 (+1), BP<90 (+1), Age≥65 (+1) = Severe pneumonia"
+      },
+      {
+        "type": "Sepsis 6 Bundle",
+        "date": "2024-11-15T21:20:00",
+        "result": "Completed",
+        "assessor": "Staff Nurse P. Davies",
+        "notes": "Blood cultures taken, antibiotics given within 1 hour, IV fluids commenced"
+      },
+      {
+        "type": "DECAF Score (COPD)",
+        "date": "2024-11-15T21:30:00",
+        "score": 3,
+        "assessor": "Respiratory Registrar",
+        "notes": "Moderate-high mortality risk"
+      }
+    ],
+    "examFindings": ["confusion", "right lower lobe crackles", "tachypnoea", "hypoxia", "bronchial breathing"]
+  },
+  {
+    "id": "p009",
+    "name": "Linda Martinez",
+    "age": 54,
+    "sex": "F",
+    "bmi": 38.5,
+    "pmh": ["Type 2 diabetes", "Hypertension", "Obesity", "Sleep apnoea", "NAFLD"],
+    "medications": ["Metformin", "Gliclazide", "Ramipril", "Aspirin", "Atorvastatin", "CPAP at night"],
+    "allergies": ["Ibuprofen - gastritis"],
+    "alerts": ["Morbid obesity - bariatric equipment", "Sleep apnoea - CPAP required", "Diabetic foot screening due"],
+    "presentingComplaint": "Increasing leg swelling, breathlessness on minimal exertion",
+    "mobility": "reduced",
+    "cognitive": "normal",
+    "nutrition": "adequate",
+    "continence": "continent",
+    "skinCondition": "healthy",
+    "weightLoss": "none",
+    "acuteDisease": false,
+    "labs": {
+      "baselineCreatinine": 95,
+      "currentCreatinine": 105,
+      "baselineEgfr": 65,
+      "currentEgfr": 58,
+      "wbc": 9,
+      "crp": 48,
+      "potassium": 5.0,
+      "sodium": 140,
+      "hb": 120,
+      "ntProBNP": 1800,
+      "glucose": 11.2,
+      "hba1c": 8.5,
+      "alt": 65,
+      "ast": 58
+    },
+    "vitals": {
+      "news2": 4,
+      "hr": 95,
+      "rr": 22,
+      "systolicBp": 155,
+      "diastolicBp": 95,
+      "temp": 37.3,
+      "spo2": 93,
+      "supplementalO2": false,
+      "avpu": "Alert"
+    },
+    "imaging": [
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-14T10:00:00",
+        "findings": "Moderate cardiomegaly. Bilateral pulmonary venous congestion. Small bilateral pleural effusions. Technical quality limited by body habitus.",
+        "reporter": "Dr. A. Radiologist"
+      },
+      {
+        "type": "Echocardiogram",
+        "date": "2024-11-14T15:30:00",
+        "findings": "Moderate LV impairment (LVEF 40%). Concentric LVH. Grade 2 diastolic dysfunction. Mild TR. RVSP 45mmHg.",
+        "reporter": "Dr. K. Cardiologist"
+      },
+      {
+        "type": "Doppler Ultrasound - Lower Limbs",
+        "date": "2024-11-14T14:00:00",
+        "findings": "No evidence of DVT. Chronic venous insufficiency bilaterally.",
+        "reporter": "Sonographer M. Lee"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "Framingham Heart Failure Criteria",
+        "date": "2024-11-14T11:00:00",
+        "result": "Congestive heart failure confirmed",
+        "assessor": "Dr. K. Cardiologist",
+        "notes": "Major criteria: dyspnoea, elevated JVP, pulmonary edema on CXR"
+      },
+      {
+        "type": "Diabetic Review",
+        "date": "2024-11-14T12:00:00",
+        "result": "Poor control",
+        "assessor": "Diabetes Nurse Specialist",
+        "notes": "HbA1c 8.5% - treatment intensification required"
+      }
+    ],
+    "examFindings": ["bilateral leg edema", "bibasal crackles", "raised JVP", "hepatomegaly"]
+  },
+  {
+    "id": "p010",
+    "name": "Patricia Martinez",
+    "age": 86,
+    "sex": "F",
+    "bmi": 17.8,
+    "pmh": ["Dementia", "Atrial fibrillation", "CKD stage 3", "Osteoporosis", "previous fall", "Stroke"],
+    "medications": ["Warfarin", "Digoxin", "Donepezil", "Bisoprolol", "Calcium", "Vitamin D", "Omeprazole", "Furosemide", "Paracetamol", "Codeine", "Lactulose"],
+    "allergies": ["NSAIDs - GI bleeding", "Trimethoprim - rash"],
+    "alerts": ["High falls risk - 1:1 care", "DNACPR in place", "Safeguarding alert", "Pressure ulcer present", "Polypharmacy review urgent", "Frailty score 8/9"],
+    "presentingComplaint": "Found on floor, reduced mobility, confusion worse than baseline",
+    "mobility": "bedbound",
+    "cognitive": "impaired",
+    "nutrition": "poor",
+    "continence": "incontinent",
+    "skinCondition": "broken",
+    "weightLoss": ">10%",
+    "acuteDisease": true,
+    "labs": {
+      "baselineCreatinine": 145,
+      "currentCreatinine": 185,
+      "baselineEgfr": 32,
+      "currentEgfr": 24,
+      "wbc": 11,
+      "crp": 95,
+      "potassium": 5.8,
+      "sodium": 128,
+      "hb": 98,
+      "urea": 18.5,
+      "inr": 4.2,
+      "albumin": 28
+    },
+    "vitals": {
+      "news2": 6,
+      "hr": 88,
+      "rr": 20,
+      "systolicBp": 98,
+      "diastolicBp": 62,
+      "temp": 36.8,
+      "spo2": 94,
+      "supplementalO2": false,
+      "avpu": "V"
+    },
+    "imaging": [
+      {
+        "type": "Hip X-ray",
+        "date": "2024-11-15T22:00:00",
+        "findings": "No acute fracture. Severe osteoarthritis both hips. Osteopenia.",
+        "reporter": "Dr. S. Williams"
+      },
+      {
+        "type": "Chest X-ray",
+        "date": "2024-11-15T22:10:00",
+        "findings": "Low lung volumes. Mild cardiomegaly. No acute consolidation. Old rib fractures.",
+        "reporter": "Dr. S. Williams"
+      }
+    ],
+    "clinicalAssessments": [
+      {
+        "type": "MUST Score",
+        "date": "2024-11-15T23:00:00",
+        "score": 5,
+        "assessor": "Dietitian L. Green",
+        "notes": "BMI 17.8 (+2), >10% weight loss (+2), acute disease (+1) = Very high malnutrition risk"
+      },
+      {
+        "type": "Waterlow Score",
+        "date": "2024-11-15T23:15:00",
+        "score": 26,
+        "assessor": "Tissue Viability Nurse",
+        "notes": "Very high pressure ulcer risk. Sacral ulcer grade 2 present. Requires air mattress and 2-hourly turns"
+      },
+      {
+        "type": "STRATIFY Falls Assessment",
+        "date": "2024-11-15T23:30:00",
+        "score": 5,
+        "assessor": "Physiotherapist M. Roberts",
+        "notes": "Maximum falls risk score: previous falls, confusion, impaired mobility, visual impairment, agitation"
+      },
+      {
+        "type": "HAS-BLED Score",
+        "date": "2024-11-15T23:45:00",
+        "score": 6,
+        "assessor": "Pharmacist T. Brown",
+        "notes": "Very high bleeding risk: INR 4.2, age >65, renal disease, previous stroke, NSAIDs contraindicated, labile INR"
+      },
+      {
+        "type": "Clinical Frailty Scale",
+        "date": "2024-11-15T23:50:00",
+        "score": 8,
+        "assessor": "Consultant Geriatrician",
+        "notes": "Severely frail - completely dependent for ADLs"
+      },
+      {
+        "type": "4AT Delirium Assessment",
+        "date": "2024-11-16T00:00:00",
+        "score": 8,
+        "assessor": "Staff Nurse K. Wilson",
+        "notes": "Delirium superimposed on dementia - likely multifactorial (infection, AKI, pain)"
+      }
+    ],
+    "examFindings": ["sacral pressure ulcer stage 2", "dehydrated", "confusion", "left-sided weakness from previous stroke", "bruising"]
+  }
+]

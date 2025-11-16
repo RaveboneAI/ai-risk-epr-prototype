@@ -1,0 +1,17 @@
+services:
+  backend:
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - CORS_ORIGIN=https://resplendent-cherilyn-swindlingly.ngrok-free.dev,http://localhost:3000
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Pass API base as build argument so it's baked into the JS bundle
+        REACT_APP_API_BASE: /api
+    restart: always
+
